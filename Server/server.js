@@ -6,9 +6,10 @@ const cors = require('cors')
 const bodyParser = require('body-parser')
 console.log(bookRouter)
 app.get('/', (req, res) => {
-  res.status(200).json({
-    message: 'it is successful',
-  })
+  // res.status(200).json({
+  //   message: 'it is successful',
+  // })
+  res.status(200).send('it is successful')
 })
 app.use(cors())
 app.use(bodyParser.json())
