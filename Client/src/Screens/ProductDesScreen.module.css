@@ -1,0 +1,53 @@
+
+
+.bookImage{
+    width: 450px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( to right ,bisque ,  rgb(104,173,172));
+}
+.bookImage img{
+    width: 70% ;
+    height: 70%;
+}
+.bookPage{
+  border: 5px ridge bisque ;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.bookPage h1{
+    color: rgb(104,173,172);
+}
+.bookInfo{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn{
+    margin-left: 6px;
+    background-color: rgb(104,173,172);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(104,173,172);
+    font-weight: bolder;
+}
+
+@media screen and (max-width:1130px) {
+    .bookInfo{
+        width: 90%;
+    }
+
+}

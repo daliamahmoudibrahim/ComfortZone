@@ -1,0 +1,14 @@
+.navbar{
+  background-color: rgb(104,173,172);
+  height: 80px;
+}
+.nav-link{
+  color: white !important;
+}
+.navbar-brand{  
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.zone{
+  color: bisque;
+}
