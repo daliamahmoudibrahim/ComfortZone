@@ -2,7 +2,20 @@
   "version": 2,
   "rewrites": [{ "source": "/(.*)", "destination": "/" }],
   "routes": [{ "src": "/(.*)", "dest": "server.js" }],
-  "builds": [{ 
-    "src": "server.js",
-   "use": "@vercel/node" }]
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node",
+      "config": {
+        "build": {
+          "command": "npm run build",
+          "output": "dist"
+        },
+        "dev": {
+          "command": "npm run dev",
+          "port": 8000 
+        }
+      }
+    }
+  ]
 }
