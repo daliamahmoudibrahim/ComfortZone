@@ -19,7 +19,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use('/books', bookRouter)
 
 // app.use('/books', bookRouter)
+const port = 8000  || process.env.PORT;
 
-app.listen(8000 || process.env.PORT, '127.0.0.1', () => {
+app.listen(port, '127.0.0.1', () => {
   console.log('project listen in port 8000')
 })
