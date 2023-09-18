@@ -21,6 +21,6 @@ app.use('/books', bookRouter)
 // app.use('/books', bookRouter)
 const port = 8000  || process.env.PORT;
 
-app.listen(port, '127.0.0.1', () => {
+app.listen(port, () => {
   console.log('project listen in port 8000')
 })
